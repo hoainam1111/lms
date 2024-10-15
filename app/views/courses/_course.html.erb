@@ -10,14 +10,17 @@
       <div>
         <div class="flex items-center justify-between font-bold mb-2">
           <%= course.title %>
+          <% if user_unlocked_courses&.include? course.id %>
+          <span class = "ml-2 text-white-50 text-xs px-2 py-1 rounded bg-green-500">Unlocked</span>
+          <%end%>
         </div>
 
         <p class="text-sm font-extralight">Hoai Nam</p>
 
         <div>
           <p class="font-md font-light">
-            <%# <%= course.paid ? "Premium Course" : "Free"%>
-            Free
+            <%= course.paid ? "Premium Course" : "Free"%>
+           
           </p>
         </div>
       </div>

@@ -5,7 +5,7 @@ class CoursesController < ApplicationController
   def index
     @courses = Course.all
     @user_started_courses = current_user&.lesson_users&.joins(:lesson)&.pluck(:course_id)&.uniq
-
+    @user_unlocked_courses = current_user&.lesson_users&.joins(:lesson)&.pluck(:course_id)
     if @user_started_courses.present?
       @user_course_progresses = @user_started_courses.map do |course_id|
         course_lessons = Course.find(course_id).lessons.count
