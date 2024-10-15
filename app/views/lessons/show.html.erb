@@ -17,10 +17,10 @@
       </p>
     </div>
     <div class="my-6 lg:mb-0">
-      <%= link_to "Mark as complete", course_lesson_path(@course, @lesson),data: {'turbo-method' => :put}, class: "bg-amaranth-500 rounded hover:bg-amaranth-800 text-white-50 px-4 py-2" %>
+      <%= link_to "Mark as complete", course_lesson_path(@course, @lesson),data: { 'turbo-method' => :put }, class: "bg-amaranth-500 rounded hover:bg-amaranth-800 text-white-50 px-4 py-2" %>
     </div>
   </div>
   <div class = "sidebar_container lg:min-w-60 lg:mr-4 lg:overflow-y-scroll">
-    <%= render "sidebar", course: @course  %>
+    <%= render "sidebar", course: @course, completed_lessons: @completed_lessons  %>
   </div>
 </div>
