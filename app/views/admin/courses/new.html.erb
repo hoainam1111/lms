@@ -1,11 +1,12 @@
-<% content_for :title, "New course" %>
+<div class=" flex flex-col justify-start items-center w-full">
+  <%= render "form", admin_course: @admin_course %>
 
-<h1>New course</h1>
+  <br>
 
-<%= render "form", admin_course: @admin_course %>
-
-<br>
-
-<div>
-  <%= link_to "Back to courses", admin_courses_path %>
+  <div>
+    <%= link_to "Back to courses", admin_courses_path %>
+  </div>
 </div>
+
+
+
