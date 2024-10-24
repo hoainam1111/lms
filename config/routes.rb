@@ -32,6 +32,6 @@ Rails.application.routes.draw do
   get "admin" => "admin#index"
 
   post "/webhook" => "webhooks#stripe"
-
+  patch "admin/courses/:course_id/lessons/:id/move" => "admin/lessons#move"
   root "courses#index"
 end

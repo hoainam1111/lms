@@ -8,10 +8,13 @@
       <%= link_to "New lesson", new_admin_course_lesson_path(@admin_course), 
       class: "bg-amaranth-500 hover:amaranth-600 text-white-50 rounded px-4 py-2 " %>
     </div>
-    <% content_for :title, "Lessons" %>
+    
 
 
-    <div id="admin_lessons">
+    <div data-controller="lesson" data-lesson-course-value="<%= @admin_course.id %>" 
+    data-sortable-animation-value="150"
+    class="flex flex-col flex-wrap justify-center lg:justify-start items-center lg:flex-row w-full gap-5 pb-4"
+    id="admin_lessons">
       <% @admin_lessons.each do |admin_lesson| %>
         <div class=" max-w-xs" id="<%= admin_lesson.id %>">
           <%= link_to  [:admin,@admin_course,admin_lesson] do %>
