@@ -41,7 +41,7 @@ Rails.application.configure do
   # caching is enabled.
   config.action_mailer.perform_caching = false
 
-  config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
+  config.action_mailer.default_url_options = { host: "https://learning-management-pb0f.onrender.com" }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
