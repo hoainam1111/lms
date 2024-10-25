@@ -36,9 +36,9 @@ class Admin::LessonsController < AdminController
     if position == 0
       @admin_lesson.move_to_top
     elsif position == @admin_course.lessons.count - 1
-        @admin_lesson.move_to_bottom
+      @admin_lesson.move_to_bottom
     else
-        @admin_lesson.insert_at(position + 1)
+      @admin_lesson.insert_at(position + 1)
     end
 
     @admin_lesson.save!

@@ -9,11 +9,11 @@ gem "sqlite3", ">= 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
+gem "importmap-rails", "~> 2.0", ">= 2.0.3"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails"
+gem "stimulus-rails", "~> 1.3", ">= 1.3.4"
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
 gem "tailwindcss-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
@@ -62,3 +62,4 @@ gem "font-awesome-sass", "~> 6.5", ">= 6.5.2"
 gem "devise", "~> 4.9", ">= 4.9.4"
 gem "stripe", "~> 13.0"
 gem "acts_as_list", "~> 1.2", ">= 1.2.3"
+gem "groupdate", "~> 6.5", ">= 6.5.1"
