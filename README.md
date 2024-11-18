@@ -23,3 +23,4 @@ Things you may want to cover:
 
 * ...
 # lms
+Sử dụng commit final để tránh các lỗi khi chạy trên local, vì mấy commit kia đã sửa file để deploy nhưng fail
